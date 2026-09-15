@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-label=";���I���4:">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a1a1e"/>
+      <stop offset="0.45" stop-color="#121218"/>
+      <stop offset="1" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <linearGradient id="beam-warm" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff8ee" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#fff8ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam-cool" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#e8f0ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e8f0ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="stage-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 720) rotate(90) scale(420 180)">
+      <stop stop-color="#fff5e6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#fff5e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="800" y1="620" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2a2a30"/>
+      <stop offset="1" stop-color="#141418"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- truss -->
+  <rect x="120" y="80" width="1360" height="8" fill="#2e2e34" opacity="0.9"/>
+  <rect x="180" y="88" width="6" height="120" fill="#3a3a42" opacity="0.7"/>
+  <rect x="1414" y="88" width="6" height="120" fill="#3a3a42" opacity="0.7"/>
+  <rect x="780" y="88" width="6" height="120" fill="#3a3a42" opacity="0.7"/>
+
+  <!-- light beams -->
+  <path d="M260 96 L520 900 L80 900 Z" fill="url(#beam-warm)" opacity="0.85"/>
+  <path d="M520 96 L860 900 L320 900 Z" fill="url(#beam-cool)" opacity="0.75"/>
+  <path d="M920 96 L1180 900 L680 900 Z" fill="url(#beam-warm)" opacity="0.7"/>
+  <path d="M1180 96 L1520 900 L940 900 Z" fill="url(#beam-cool)" opacity="0.65"/>
+
+  <!-- stage platform -->
+  <rect x="0" y="620" width="1600" height="280" fill="url(#floor)"/>
+  <ellipse cx="800" cy="620" rx="560" ry="40" fill="url(#stage-glow)"/>
+
+  <!-- stage edge -->
+  <rect x="200" y="600" width="1200" height="20" fill="#3d3d45" opacity="0.85"/>
+  <rect x="200" y="618" width="1200" height="4" fill="#fff" opacity="0.08"/>
+
+  <!-- speaker stacks -->
+  <rect x="230" y="420" width="48" height="180" rx="2" fill="#222228" stroke="#44444c" stroke-width="1"/>
+  <rect x="238" y="430" width="32" height="28" rx="1" fill="#111116"/>
+  <rect x="238" y="468" width="32" height="28" rx="1" fill="#111116"/>
+  <rect x="238" y="506" width="32" height="28" rx="1" fill="#111116"/>
+  <rect x="1322" y="420" width="48" height="180" rx="2" fill="#222228" stroke="#44444c" stroke-width="1"/>
+  <rect x="1330" y="430" width="32" height="28" rx="1" fill="#111116"/>
+  <rect x="1330" y="468" width="32" height="28" rx="1" fill="#111116"/>
+  <rect x="1330" y="506" width="32" height="28" rx="1" fill="#111116"/>
+
+  <!-- LED wall -->
+  <rect x="560" y="280" width="480" height="300" rx="2" fill="#0e0e12" stroke="#33333a" stroke-width="1"/>
+  <rect x="572" y="292" width="456" height="276" fill="#181820"/>
+  <rect x="600" y="320" width="400" height="8" rx="1" fill="#fff" opacity="0.06"/>
+  <rect x="600" y="340" width="320" height="8" rx="1" fill="#fff" opacity="0.04"/>
+  <rect x="600" y="360" width="360" height="8" rx="1" fill="#fff" opacity="0.05"/>
+
+  <!-- crowd silhouette -->
+  <path d="M0 680 Q120 640 240 680 T480 670 T720 685 T960 665 T1200 680 T1440 660 T1600 675 V900 H0 Z" fill="#0c0c10" opacity="0.55"/>
+
+  <!-- placeholder label -->
+  <rect x="620" y="820" width="360" height="36" rx="2" fill="#fff" fill-opacity="0.06"/>
+  <text x="800" y="843" text-anchor="middle" fill="#ffffff" fill-opacity="0.35" font-family="system-ui, sans-serif" font-size="13" letter-spacing="3">HERO IMAGE PLACEHOLDER</text>
+</svg>

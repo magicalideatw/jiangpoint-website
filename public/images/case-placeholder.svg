@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" role="img" aria-label="H�gG placeholder">
+  <rect width="1200" height="800" fill="#f0efec"/>
+  <rect x="1" y="1" width="1198" height="798" stroke="#dddcd8" stroke-width="1"/>
+  <path d="M0 620 L320 420 L560 520 L820 360 L1200 480 V800 H0 Z" fill="#e8e7e3"/>
+  <circle cx="920" cy="180" r="48" fill="#e2e1dc"/>
+  <text x="600" y="760" text-anchor="middle" fill="#b0afa8" font-family="system-ui, sans-serif" font-size="13" letter-spacing="4">CASE PHOTO PLACEHOLDER</text>
+</svg>
