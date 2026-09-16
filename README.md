@@ -28,7 +28,7 @@ components/
   layout/             # Header、Footer
   ui/                 # 共用 UI 元件
 lib/
-  site-config.ts      # 品牌與網站設定（placeholder 集中管理）
+  site-config.ts      # 品牌與網站設定
   metadata.ts         # SEO metadata 工具
 ```
 
@@ -41,5 +41,4 @@ npm start
 
 ## 備註
 
-- 聯絡資訊、案例、價格等尚未提供的內容，均以 placeholder 標示。
-- 服務獨立頁、文章系統、聯絡表單等將於後續階段建置。
+- 服務獨立頁與更多案例可於後續階段擴充。

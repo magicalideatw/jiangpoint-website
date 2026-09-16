@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { mainNav, serviceCoverage, siteConfig } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 
 export function Footer() {
-  const { brand, contact } = siteConfig;
+  const { brand } = siteConfig;
   const year = new Date().getFullYear();
 
   return (
@@ -51,20 +52,24 @@ export function Footer() {
             <p className="font-display text-[11px] tracking-[0.28em] text-muted uppercase">
               Contact
             </p>
-            <ul className="mt-6 space-y-3 text-[14px] text-muted">
-              <li>{contact.phone}</li>
-              <li>{contact.email}</li>
-              <li>{contact.line}</li>
-              <li>{contact.address}</li>
-            </ul>
+            <p className="mt-6 text-lg font-medium tracking-[0.02em] text-foreground">
+              開始規劃你的活動
+            </p>
+            <p className="mt-4 max-w-sm text-[14px] leading-[1.85] text-muted">
+              告訴我們活動日期、場地、人數與需求，
+              <br className="hidden sm:inline" />
+              匠點娛樂將依活動條件提供燈光、音響與現場技術方案。
+            </p>
+            <Button href="/#inquiry-form" variant="primary" className="mt-8 w-full sm:w-auto">
+              立即詢價 →
+            </Button>
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-border-subtle pt-8 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 border-t border-border-subtle pt-8 text-xs text-muted">
           <p>
             © {year} {brand.nameZh}（{brand.nameEn}）
           </p>
-          <p>部分內容為 placeholder，待正式資料提供後更新。</p>
         </div>
       </Container>
     </footer>

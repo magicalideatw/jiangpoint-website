@@ -16,11 +16,11 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
   locale: "zh-TW",
   contact: {
-    email: "[待提供聯絡信箱]",
-    phone: "[待提供聯絡電話]",
-    line: "[待提供 LINE 連結]",
-    address: "[待提供公司地址]",
-    hours: "[待提供服務時間]",
+    email: "",
+    phone: "",
+    line: "",
+    address: "",
+    hours: "",
   },
 } as const;
 

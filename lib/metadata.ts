@@ -57,23 +57,34 @@ export function createPageMetadata({
   title,
   description,
   path = "",
+  titleAbsolute,
 }: {
-  title: string;
+  title?: string;
   description?: string;
   path?: string;
+  /** 完整 title，略過 layout template（首頁 SEO 用） */
+  titleAbsolute?: string;
 }): Metadata {
-  const canonical = `${url}${path}`;
+  const baseUrl = url.replace(/\/$/, "");
+  const canonical = path === "/" ? `${baseUrl}/` : `${baseUrl}${path}`;
   const pageDescription = description ?? brand.description;
+  const ogTitle = titleAbsolute ?? `${title}｜${brand.nameZh}`;
+
   return {
-    title,
+    title: titleAbsolute ? { absolute: titleAbsolute } : title,
     description: pageDescription,
     alternates: {
       canonical,
     },
     openGraph: {
-      title: `${title}｜${brand.nameZh}`,
+      title: ogTitle,
       description: pageDescription,
       url: canonical,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description: pageDescription,
     },
   };
 }

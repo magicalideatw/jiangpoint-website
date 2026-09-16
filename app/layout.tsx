@@ -38,14 +38,20 @@ function OrganizationJsonLd() {
         name: area,
       })),
     ],
-    email: contact.email.startsWith("[") ? undefined : contact.email,
-    telephone: contact.phone.startsWith("[") ? undefined : contact.phone,
-    address: contact.address.startsWith("[")
-      ? undefined
-      : {
-          "@type": "PostalAddress",
-          streetAddress: contact.address,
-        },
+    ...(contact.email
+      ? { email: contact.email }
+      : {}),
+    ...(contact.phone
+      ? { telephone: contact.phone }
+      : {}),
+    ...(contact.address
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: contact.address,
+          },
+        }
+      : {}),
   };
 
   return (

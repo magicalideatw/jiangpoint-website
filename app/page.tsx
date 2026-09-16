@@ -10,7 +10,10 @@ import { ServiceAreaSection } from "@/components/home/ServiceAreaSection";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export const metadata = createPageMetadata({
-  title: "首頁",
+  titleAbsolute:
+    "活動燈光音響｜音響出租・舞台燈光・現場技術服務｜匠點娛樂",
+  description:
+    "匠點娛樂 JIANG POINT 提供活動燈光音響、音響出租、舞台燈光、現場技術服務與活動整合，服務台北、新北、桃園、新竹及全台各地，承接企業活動、校園活動、尾牙春酒、表演、選舉造勢與政見發表等活動。",
   path: "/",
 });
 
