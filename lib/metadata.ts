@@ -48,6 +48,9 @@ export const defaultMetadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export function createPageMetadata({
