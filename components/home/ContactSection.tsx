@@ -1,7 +1,7 @@
-import { serviceCoverage } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
 import { InquiryForm } from "@/components/home/InquiryForm";
 
 export function ContactSection() {
@@ -16,22 +16,24 @@ export function ContactSection() {
             <SectionHeading
               number="05"
               label="Contact"
-              title="立即詢價"
-              description="告訴我們您的活動需求，我們將依活動規模、場地與設備需求協助評估。"
+              title="開始規劃你的活動"
+              description="告訴我們活動日期、場地、人數與需求，匠點娛樂將依活動條件提供燈光、音響與現場技術方案。"
               align="left"
             />
             <div className="mt-10">
-              <p className="text-[13px] tracking-[0.06em] text-foreground">
-                {serviceCoverage.contactHeading}
-              </p>
-              <p className="mt-3 text-[14px] leading-relaxed text-muted">
-                {serviceCoverage.contactNote}
+              <Button href="#inquiry-form" variant="primary" className="w-full sm:w-auto">
+                立即詢價 →
+              </Button>
+              <p className="mt-8 text-[13px] tracking-[0.06em] text-muted">
+                服務地區：台北・新北・桃園・新竹・全台接案
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={100} className="min-w-0 lg:max-w-xl lg:justify-self-end lg:w-full">
-            <InquiryForm />
+            <div id="inquiry-form" className="scroll-mt-24">
+              <InquiryForm />
+            </div>
           </Reveal>
         </div>
       </Container>
