@@ -71,6 +71,18 @@ export function Footer() {
             © {year} {brand.nameZh}（{brand.nameEn}）
           </p>
         </div>
+
+        <p className="mt-6 text-center text-[11px] tracking-[0.04em] text-muted-light">
+          網站製作｜
+          <Link
+            href="https://www.sitecraft.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-light underline-offset-4 transition-colors hover:text-muted hover:underline"
+          >
+            好站製所 SITECRAFT
+          </Link>
+        </p>
       </Container>
     </footer>
   );
