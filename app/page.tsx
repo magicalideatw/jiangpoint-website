@@ -7,6 +7,7 @@ import { AboutSection } from "@/components/home/AboutSection";
 import { WhyChooseSection } from "@/components/home/WhyChooseSection";
 import { FaqSection } from "@/components/home/FaqSection";
 import { ServiceAreaSection } from "@/components/home/ServiceAreaSection";
+import { PricingCtaSection } from "@/components/home/PricingCtaSection";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export const metadata = createPageMetadata({
@@ -28,6 +29,7 @@ export default function HomePage() {
       <WhyChooseSection />
       <FaqSection />
       <ServiceAreaSection />
+      <PricingCtaSection />
       <ContactSection />
     </>
   );

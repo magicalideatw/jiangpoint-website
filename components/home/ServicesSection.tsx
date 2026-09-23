@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { services } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -39,6 +40,15 @@ export function ServicesSection() {
               </li>
             ))}
           </ul>
+
+          <p className="mt-12 lg:mt-16">
+            <Link
+              href="/pricing"
+              className="inline-block text-[13px] tracking-[0.04em] text-muted transition-colors duration-300 hover:text-foreground"
+            >
+              查看完整服務價格 →
+            </Link>
+          </p>
         </div>
       </Container>
     </section>

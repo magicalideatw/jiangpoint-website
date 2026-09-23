@@ -41,6 +41,7 @@ export const mainNav: NavItem[] = [
   { label: "精選案例", href: "/#projects" },
   { label: "服務項目", href: "/#services" },
   { label: "活動指南", href: "/guide" },
+  { label: "價格", href: "/pricing" },
   { label: "關於匠點", href: "/#about" },
   { label: "常見問題", href: "/#faq" },
 ];
