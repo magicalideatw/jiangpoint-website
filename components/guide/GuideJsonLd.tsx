@@ -46,6 +46,7 @@ export function GuideArticleJsonLd({ article }: { article: GuideArticle }) {
     headline: article.h1,
     description: article.metaDescription,
     datePublished: article.publishedAt,
+    ...(article.updatedAt ? { dateModified: article.updatedAt } : {}),
     ...(imageUrl ? { image: [imageUrl] } : {}),
     author: {
       "@type": "Organization",

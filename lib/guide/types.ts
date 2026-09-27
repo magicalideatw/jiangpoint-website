@@ -11,11 +11,28 @@ export type GuideSectionLink = {
   label: string;
 };
 
-export type GuideSection = {
+export type GuideSectionAction = {
+  href: string;
+  label: string;
+  variant?: "button" | "link";
+};
+
+export type GuideSubsection = {
   heading: string;
   paragraphs?: string[];
   list?: string[];
   links?: GuideSectionLink[];
+};
+
+export type GuideSection = {
+  heading: string;
+  paragraphs?: string[];
+  /** 顯示在 subsections 之後的段落 */
+  tailParagraphs?: string[];
+  list?: string[];
+  links?: GuideSectionLink[];
+  subsections?: GuideSubsection[];
+  actions?: GuideSectionAction[];
 };
 
 export type GuideImageAsset = {
@@ -44,6 +61,8 @@ export type GuideArticle = {
   h1: string;
   excerpt: string;
   publishedAt: string;
+  /** 文章更新日（Article Schema dateModified） */
+  updatedAt?: string;
   intro: string[];
   sections: GuideSection[];
   relatedSlugs: string[];

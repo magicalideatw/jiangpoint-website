@@ -42,8 +42,19 @@ export const guideArticleImages: Record<string, GuideArticleImages> = {
     inline: [{ afterSectionIndex: 1, image: guidePhotos.outdoorStageLighting }],
   },
   "event-lighting": {
-    hero: guidePhotos.outdoorStageLighting,
-    inline: [{ afterSectionIndex: 2, image: guidePhotos.lightingSoundEquipment }],
+    hero: {
+      ...guidePhotos.outdoorStageLighting,
+      alt: "活動燈光與舞台燈光配置示意",
+    },
+    inline: [
+      {
+        afterSectionIndex: 2,
+        image: {
+          ...guidePhotos.lightingSoundEquipment,
+          alt: "活動燈光與舞台燈光設備配置示意",
+        },
+      },
+    ],
   },
   "audio-rental-vs-audio-control": {
     hero: guidePhotos.mixingConsole,

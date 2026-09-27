@@ -75,7 +75,7 @@ export default async function GuideArticlePage({ params }: PageProps) {
             <GuideFigure image={images.closing} className="mt-12 lg:mt-14" />
           )}
           <GuideRelatedReading articles={related} />
-          <GuideInquiryCTA />
+          {slug !== "event-lighting" && <GuideInquiryCTA />}
         </Container>
       </article>
     </>
